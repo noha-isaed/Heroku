@@ -30,11 +30,11 @@ jobs:
           
       - name: docker build 
         run : |
-          docker build ./ -t ${{ secrets.DOCKER_USER }}/Flask_Image:latest
+          docker build ./ -t ${{ secrets.DOCKER_USER }}/catnip
   
       - name: docker push 
         run : |
-          docker push ${{ secrets.DOCKER_USER }}/Flask_Image:latest
+          docker push ${{ secrets.DOCKER_USER }}/catnip
         
           
 
